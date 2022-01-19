@@ -1,0 +1,17 @@
+align {
+  width: 100px;
+  vertical-align: top;
+  box-align: right;
+}
+
+body {
+  background-color:#564572
+}
+
+input {
+  background-color:#bdbec0
+}
+
+button {
+  background-color:#bdbec0
+}
