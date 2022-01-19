@@ -1,49 +1,29 @@
 <!DOCTYPE html>
-
 <html>
-    <style>
-        .center {
-            margin: auto;
-            width: 30%;
-            border: 3px solid #54abab;
-            padding: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            }
-    </style>
-    <head>
-        <Title>Sign in page</Title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div class="center">
-            <br>
-            <h1>Login</h1>
+  <head>
+    <title>Sign In Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Sign In</h1>
 
-            <br>
-            <label>Email*</label>
-            <input name = "email">
-            <br>
+    <table>
+      <tr><td><label><span style="color:red">*</span>Email:</label>
+      <td><input type="email" placeholder="Enter Email">
 
-            <br>
-            <label>Password*</label>
-            <input type= "password" name = "password">
-            <br>
+      <br>
 
-            <br>
-            <button>Login</button>
-            <br>
+      <tr><td><label><span style="color:red">*</span>Password:</label>
+      <td><input type="password" placeholder="Enter Password">
+    </table>
 
-            <br>
-            <label>Not resgistered yet? <a href="createAccount.html">Create an Account</a></label>
-            <br>
+    <br>
 
-        </div>
+    <button href="ticket.html">Sign In</button>
 
-        <div>
+    <br><br>
 
-        </div>
-        
+    <label>Not resgistered yet? <a href="createAccount.html">Create an Account</a></label>
 
-    </body>
-
+  </body>
 </html>
