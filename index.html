@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <title>Sign In Page</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -10,23 +11,29 @@
     <h1>Sign In</h1>
 
     <table>
+      
       <tr><td><label><span style="color:red">*</span>Email:</label>
-      <td><input type="email" placeholder="Enter Email">
+      <td><input id = "email" type="email" placeholder="Enter Email">
 
       <br>
 
       <tr><td><label><span style="color:red">*</span>Password:</label>
-      <td><input type="password" placeholder="Enter Password">
+      <td><input id = "password" type="password" placeholder="Enter Password">
+
+      
     </table>
 
     <br>
 
-    <button href="ticket.html">Sign In</button>
+    <input type="button" onclick="getInfo()" value="Sign In">
 
     <br><br>
 
     <label>Not resgistered yet? <a href="createAccount.html">Create an Account</a></label>
     </div>
     </div>
+    <script src="main.js"></script>
   </body>
+
+
 </html>
