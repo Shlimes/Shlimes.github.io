@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
-    <title>Sign In Page</title>
+    <title>Create Account</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="center">
       <div class="content">
-    <h1>Sign In</h1>
+        <h1>Sign Up</h1>
 
-    <table>
-      
-      <tr><td><label><span style="color:red">*</span>Email:</label>
-      <td><input id = "email" type="email" placeholder="Enter Email">
+        <table>
 
-      <br>
+          <tr><td><label><span style="color:red">*</span>Email:</label>
+          <td><input type="email">
 
-      <tr><td><label><span style="color:red">*</span>Password:</label>
-      <td><input id = "password" type="password" placeholder="Enter Password">
+          <br>
 
-      
-    </table>
+          <tr><td><label><span style="color:red">*</span>Password:</label>
+          <td><input type="password">
 
-    <br>
+          <br>
 
-    <input type="button" onclick="getInfo()" value="Sign In">
+          <tr><td><label><span style="color:red">*</span>Confirm Password:</label>
+          <td><input type="password">
+        </table>
 
-    <br><br>
+        <br>
 
-    <label>Not resgistered yet? <a href="createAccount.html">Create an Account</a></label>
+        <button href="ticket.html">Sign Up</button>
+      </div>
     </div>
-    </div>
-    <script src="main.js"></script>
+    <header>
+      <a href="https://paul-desmarais.ecolecatholique.ca/" target="_blank">
+      <img src="Paul-D.png" class="image">
+      </a>
+      <button onclick="location.href='index.html'">Back</button>
+    </header>
   </body>
-
-
 </html>
