@@ -5,7 +5,7 @@ align {
 }
 
 body {
-  background-color: #564572
+  background: linear-gradient(#564572, #261e32) fixed;
 }
 
 .center {
