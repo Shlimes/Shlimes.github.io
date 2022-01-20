@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
     <title>Sign In Page</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -8,32 +7,34 @@
   <body>
     <div class="center">
       <div class="content">
-    <h1>Sign In</h1>
+        <h1>Sign In</h1>
+        <table>
+          <tr><td><label><span style="color:red">*</span>Email:</label>
+          <td><input id="email" type="email" placeholder="Enter Email">
 
-    <table>
-      
-      <tr><td><label><span style="color:red">*</span>Email:</label>
-      <td><input id = "email" type="email" placeholder="Enter Email">
+          <br>
 
-      <br>
+          <tr><td><label><span style="color:red">*</span>Password:</label>
+          <td><input id="password" type="password" placeholder="Enter Password">
+        </table>
 
-      <tr><td><label><span style="color:red">*</span>Password:</label>
-      <td><input id = "password" type="password" placeholder="Enter Password">
+        <br>
 
-      
-    </table>
+        <input type="button" onclick="getInfo()" value="Sign In">
 
-    <br>
+        <br><br>
 
-    <input type="button" onclick="getInfo()" value="Sign In">
+        <label>
+          Not resgistered yet? <a href="createAccount.html">Create an Account</a>
+        </label>
 
-    <br><br>
-
-    <label>Not resgistered yet? <a href="createAccount.html">Create an Account</a></label>
+      </div>
     </div>
-    </div>
+    <header>
+      <a href="https://paul-desmarais.ecolecatholique.ca/" target="_blank">
+      <img src="Paul-D.png" class="image">
+      </a>
+    </header>
     <script src="main.js"></script>
   </body>
-
-
 </html>
