@@ -24,7 +24,7 @@ var txtEmail = document.getElementById("email");
 var txtGrade = document.getElementsByName("grade");
 var txtType = document.getElementsByName("type");
 var txtComments = document.getElementsByName("comments");
-
+//HELP
 let ticket = new TicketObject(txtEmail, txtGrade, txtType, txtComments, "", "")
 ticket.setDate();
 ticket.setIdentifier();
