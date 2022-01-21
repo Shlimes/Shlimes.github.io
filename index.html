@@ -1,33 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sign In Page</title>
+    <title>Ticket</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="center">
-      <div class="content">
-        <h1>Sign In</h1>
-        <table>
-          <tr><td><label><span style="color:red">*</span>Email:</label>
-          <td><input id="email" type="email" placeholder="Enter Email">
 
-          <br>
+    <div class="main">
 
-          <tr><td><label><span style="color:red">*</span>Password:</label>
-          <td><input id="password" type="password" placeholder="Enter Password">
-        </table>
+      <input type="button" class="login" value="Admin" onclick="window.location.href='admin.html'">
 
-        <br>
+      <br>
 
-        <input type="button" onclick="getInfo()" value="SIGN IN">
+      <input type="button" class="login" value="User" onclick="window.location.href='ticket.html'">
 
-        <br><br>
-
-        <label>
-          Not registered yet? <a href="createAccount.html">Create an Account</a>
-        </label>
-      </div>
     </div>
 
     <header>
