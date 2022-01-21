@@ -10,7 +10,7 @@ body {
 
 .center {
   position: absolute;
-  height: 30%;
+  height: 60%;
   width: 35%;
   left: 50%;
   top: 50%;
@@ -68,4 +68,19 @@ input[type=button] {
   height: 40px;
   background: linear-gradient(135deg, #564572, #261e32);
   color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+textarea {
+  height: 200px;
+  width: 354px;
+  resize: none;
+}
+
+input[type=text] {
+  width: 360px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
 }
