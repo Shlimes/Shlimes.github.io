@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticket</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="center">
+      <div class="content">
+        <h1>Soumettez Votre Problème</h1>
+        <table>
+          <tr><td><label><span style="color:red">*</span>Nom:</label>
+          <td><input type="text" id="name">
 
+          <br>
+
+          <tr><td><label><span style="color:red">*</span>Email:</label>
+          <td><input type="text" id="email">
+
+          <br>
+
+          <tr><td><label><span style="color:red">*</span>Description:</label>
+          <td><textarea id="decription"></textarea>
+        </table>
+
+        <br>
+
+        <input type="button" onclick="getInfo()" value="SOUMETTRE">
+      </div>
+    </div>
+
+    <header>
+      <a href="https://paul-desmarais.ecolecatholique.ca/" target="_blank">
+      <img src="Paul-D.png" class="image">
+      </a>
+    </header>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
