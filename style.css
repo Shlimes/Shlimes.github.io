@@ -35,8 +35,6 @@ header {
   right: 0;  
   top: 0px;  
   height: 50px;  
-  display: flex;  
-  align-items: center;  
   box-shadow: 0 0 25px 0 black;  
 }
 
@@ -51,6 +49,7 @@ header {
 
 .backbutton {
   margin-left: 0.5%;
+  margin-top: 0.4%;
   width: 100px;
   height: 40px;
   transition-duration: 0.3s;
@@ -62,7 +61,7 @@ header {
   color: white;
 }
 
-input[type=button] {
+.submit {
   border-radius: 10px;
   width: 100px;
   height: 40px;
@@ -83,4 +82,47 @@ input[type=text] {
   margin: 8px 0;
   display: inline-block;
   box-sizing: border-box;
+}
+
+.main {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.login {
+  border-radius: 15px;
+  width: 400px;
+  height: 175px;
+  font-size: 50px;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 600;
+  -webkit-text-fill-color: #564572;
+  background: linear-gradient(135deg, #bdbec0, #434344);
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+.password {
+  font-size: 50px;
+  text-align: center;
+  -webkit-text-fill-color: white;
+}
+
+.passwordinput {
+  font-size: 40px;
+}
+
+.connecter {
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(135deg, #564572, #261e32);
+  color: white;
+  display: block;
+  margin: 0 auto;
 }
