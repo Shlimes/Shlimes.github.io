@@ -26,8 +26,9 @@ function getInfo(){
 }
 
 function passwordAdmin(){
-    var password;
+    var password = document.getElementById("password").value;
     var password1 = "123"
     if (password == password1) {
-        window.location="https://www.youtube.com/";
+        window.location.href = "http://www.w3schools.com";
     }
+}
