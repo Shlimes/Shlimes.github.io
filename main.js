@@ -1,3 +1,5 @@
+var array = []
+
 function passwordAdmin(){
     var password = document.getElementById("password").value;
     var password1 = "123"
@@ -34,7 +36,6 @@ function CreateTicket() {
     let ticket = new TicketObject(txtEmail, txtGrade, txtType, txtComments, "", "")
     ticket.setDate();
     ticket.setIdentifier();
-    var array = []
     array.push(ticket)
     console.log(array)
 
