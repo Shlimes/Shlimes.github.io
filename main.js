@@ -24,3 +24,10 @@ function getInfo(){
         } 
     }
 }
+
+function passwordAdmin(){
+    var password;
+    var password1 = "123"
+    if (password == password1) {
+        window.location="https://www.youtube.com/";
+    }
