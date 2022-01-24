@@ -138,3 +138,14 @@ input[type=text] {
   color: white;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #dddddd;
+}
+
+td, th {
+  border: 1px solid #7a7a7a;
+  text-align: left;
+  padding: 8px;
+}
