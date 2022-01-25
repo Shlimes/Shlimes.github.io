@@ -8,9 +8,34 @@ function passwordAdmin(){
     }
 }
 
+function loadUsers() {
+  arrEmail = window.localStorage.getItem('emailData');
+  arrName = window.localStorage.getItem('nameData');
+  arrGrade = window.localStorage.getItem('gradeData');
+  arrType = window.localStorage.getItem('typeData');
+  arrComments = window.localStorage.getItem('commentsData');
+
+  var n = document.getElementById("nameData");
+  n.innerHTML = arrName;
+
+  var e = document.getElementById("emailData");
+  e.innerHTML = arrEmail;
+
+  var g = document.getElementById("gradeData");
+  g.innerHTML = arrGrade;
+
+  var t = document.getElementById("typeData");
+  t.innerHTML = arrType;
+
+  var c = document.getElementById("commentsData");
+  c.innerHTML = arrComments;
+    
+}
+
 function CreateTicket() {
 
-    function TicketObject(email, grade, type, comments, identifier, date) {
+    function TicketObject(name, email, grade, type, comments, identifier, date) {
+      this.name = name;
       this.email = email;
       this.grade = grade;
       this.type = type;
@@ -28,16 +53,22 @@ function CreateTicket() {
       return(identifier);
     }
     
+    var txtName = document.getElementById("name").value;
     var txtEmail = document.getElementById("email").value;
     var txtGrade = document.getElementById("grade").value;
     var txtType = document.getElementById("type").value;
     var txtComments = document.getElementById("description").value;
-    //HELP
+
     let ticket = new TicketObject(txtEmail, txtGrade, txtType, txtComments, "", "")
     ticket.setDate();
     ticket.setIdentifier();
     array.push(ticket)
     console.log(array)
 
+    window.localStorage.setItem('nameData', JSON.stringify(txtName));
+    window.localStorage.setItem('emailData', JSON.stringify(txtEmail));
+    window.localStorage.setItem('gradeData', JSON.stringify(txtGrade));
+    window.localStorage.setItem('typeData', JSON.stringify(txtType));
+    window.localStorage.setItem('commentsData', JSON.stringify(txtComments));
     
 }
