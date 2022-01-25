@@ -3,6 +3,7 @@ var arrayEmail = []
 var arrayGrade = []
 var arrayType = []
 var arrayComments = []
+var arrayID = []
 
 function passwordAdmin(){
     var password = document.getElementById("password").value;
@@ -18,6 +19,10 @@ function loadUsers() {
   arrGrade = window.localStorage.getItem('gradeData');
   arrType = window.localStorage.getItem('typeData');
   arrComments = window.localStorage.getItem('commentsData');
+  arrID = window.localStorage.getItem('idData');
+
+  var i = document.getElementById("idData");
+  i.innerHTML = arrID;
 
   var n = document.getElementById("nameData");
   n.innerHTML = arrName;
@@ -72,7 +77,9 @@ function CreateTicket() {
     arrayGrade.push(ticket.grade)
     arrayType.push(ticket.type)
     arrayComments.push(ticket.comments)
+    arrayID.push(ticket.identifier)
 
+    window.localStorage.setItem('idData', arrayID);
     window.localStorage.setItem('nameData', arrayName);
     window.localStorage.setItem('emailData', arrayEmail);
     window.localStorage.setItem('gradeData', arrayGrade);
