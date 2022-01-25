@@ -149,3 +149,9 @@ input[type=text] {
   text-align: left;
   padding: 8px;
 }
+
+.tdAdmin {
+  border: 1px solid #7a7a7a;
+  text-align: left;
+  padding: 8px;
+}
