@@ -1,4 +1,8 @@
-var array = []
+var arrayName = []
+var arrayEmail = []
+var arrayGrade = []
+var arrayType = []
+var arrayComments = []
 
 function passwordAdmin(){
     var password = document.getElementById("password").value;
@@ -59,16 +63,20 @@ function CreateTicket() {
     var txtType = document.getElementById("type").value;
     var txtComments = document.getElementById("description").value;
 
-    let ticket = new TicketObject(txtEmail, txtGrade, txtType, txtComments, "", "")
+    let ticket = new TicketObject(txtName, txtEmail, txtGrade, txtType, txtComments, "", "")
     ticket.setDate();
     ticket.setIdentifier();
-    array.push(ticket)
-    console.log(array)
 
-    window.localStorage.setItem('nameData', JSON.stringify(txtName));
-    window.localStorage.setItem('emailData', JSON.stringify(txtEmail));
-    window.localStorage.setItem('gradeData', JSON.stringify(txtGrade));
-    window.localStorage.setItem('typeData', JSON.stringify(txtType));
-    window.localStorage.setItem('commentsData', JSON.stringify(txtComments));
+    arrayName.push(ticket.name)
+    arrayEmail.push(ticket.email)
+    arrayGrade.push(ticket.grade)
+    arrayType.push(ticket.type)
+    arrayComments.push(ticket.comments)
+
+    window.localStorage.setItem('nameData', arrayName);
+    window.localStorage.setItem('emailData', arrayEmail);
+    window.localStorage.setItem('gradeData', arrayGrade);
+    window.localStorage.setItem('typeData', arrayType);
+    window.localStorage.setItem('commentsData', arrayComments);
     
 }
