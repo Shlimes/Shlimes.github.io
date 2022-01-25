@@ -5,22 +5,26 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="center">
-      <div class="content">
+
+    <div class="center"> <!-- Début de div "center"(pour centrer) -->
+
+      <div class="content"> <!-- Début de div "content" -->
+        
         <h1>Soumettez Votre Problème</h1>
-        <table>
+
+        <table> 
           <tr><td><label><span style="color:red">*</span>Nom:</label>
-          <td><input type="text" id="name">
+          <td><input type="text" id="name"> <!-- Entrée pour le nom de l'utilisateur -->
 
           <br>
 
           <tr><td><label><span style="color:red">*</span>Email:</label>
-          <td><input type="text" id="email">
+          <td><input type="text" id="email"> <!-- Entrée pour le email de l'utilisateur -->
 
           <br>
             
           <tr><td><label><span style="color:red">*</span>Grade:</label>
-          <td><select name="grade" id="grade">
+          <td><select name="grade" id="grade"> <!-- Entrée pour l'année de l'utilisateur -->
              <option value="7">7</option>
              <option value="8">8</option>
              <option value="9">9</option>
@@ -32,7 +36,7 @@
            <br><br>
 
           <tr><td><label><span style="color:red">*</span>Type:</label>
-          <td><select name="type" id="type">
+          <td><select name="type" id="type"> <!-- Entrée pour le type de problème de l'utilisateur -->
               <option value="chromebook">Chromebook</option>
               <option value="wifi">Wifi</option>
               <option value="other">Other</option>
@@ -41,26 +45,28 @@
            <br><br>
 
           <tr><td><label><span style="color:red">*</span>Description:</label>
-          <td><textarea id="description"></textarea>
+          <td><textarea id="description"></textarea> <!-- Entrée pour la description du problème de l'utilisateur -->
         </table>
 
         <br>
 
+        <!-- Bouton de soumettre les données -->
         <input type="button" class="submit" onclick="CreateTicket()" value="SOUMETTRE">
-        <!-- switch onclick to CreateTicket() when it works-->
-        <!-- implement getInfo() into CreateTicket() so we can save date & ticket number-->
 
-      </div>
-    </div>
+      </div> <!-- Fin du div "content" -->
+      
+    </div> <!-- Fin du div "center" -->
 
-    <header>
+    <header> <!-- Début du header -->
+    
       <a href="https://paul-desmarais.ecolecatholique.ca/" target="_blank">
       <img src="Paul-D.png" class="image">
       </a>
 
+      <!-- Bouton pour retourner à la page d'acceuil -->
       <button class="backbutton" onclick="window.location.href='index.html'">Back</button>
       
-    </header>
+    </header> <!-- Fin du header -->
 
     <script src="main.js"></script>
 
