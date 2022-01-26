@@ -22,12 +22,12 @@ function passwordAdmin(){
 //Fonction pour les données d'un compte
 function loadUsers() {
   //Utilisé le web API window.localStorage pour chercher les données
-  arrEmail = window.localStorage.getItem('emailData');
-  arrName = window.localStorage.getItem('nameData');
-  arrGrade = window.localStorage.getItem('gradeData');
-  arrType = window.localStorage.getItem('typeData');
-  arrComments = window.localStorage.getItem('commentsData');
-  arrID = window.localStorage.getItem('idData');
+  arrEmail = JSON.parse(window.localStorage.getItem('emailData'));
+  arrName = JSON.parse(window.localStorage.getItem('nameData'));
+  arrGrade = JSON.parse(window.localStorage.getItem('gradeData'));
+  arrType = JSON.parse(window.localStorage.getItem('typeData'));
+  arrComments = JSON.parse(window.localStorage.getItem('commentsData'));
+  arrID = JSON.parse(window.localStorage.getItem('idData'));
 
   //Déclarer des variables pour les données
   var i = document.getElementById("idData");
@@ -37,7 +37,7 @@ function loadUsers() {
   n.innerHTML = arrName;
 
   var e = document.getElementById("emailData");
-  e.innerHTML = arrEmail;
+  e.innerHTML = arrEmail[0];
 
   var g = document.getElementById("gradeData");
   g.innerHTML = arrGrade;
@@ -103,11 +103,11 @@ function CreateTicket() {
     arrayID.push(ticket.identifier)
 
     //Sauvegarder les données
-    window.localStorage.setItem('idData', arrayID);
-    window.localStorage.setItem('nameData', arrayName);
-    window.localStorage.setItem('emailData', arrayEmail);
-    window.localStorage.setItem('gradeData', arrayGrade);
-    window.localStorage.setItem('typeData', arrayType);
-    window.localStorage.setItem('commentsData', arrayComments);
+    window.localStorage.setItem('idData', JSON.stringify(arrayID));
+    window.localStorage.setItem('nameData', JSON.stringify(arrayName));
+    window.localStorage.setItem('emailData', JSON.stringify(arrayEmail));
+    window.localStorage.setItem('gradeData', JSON.stringify(arrayGrade));
+    window.localStorage.setItem('typeData', JSON.stringify(arrayType));
+    window.localStorage.setItem('commentsData', JSON.stringify(arrayComments));
     
 }//Fin de la fonction CreateTicket
