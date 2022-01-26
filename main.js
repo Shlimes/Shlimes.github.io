@@ -1,3 +1,4 @@
+//Programe quie créer, soummet, et sauvegarde un ticket si un élève a un problème technique avec son Chromebook ou son internet.
 //Déclarer des variables pour les propriétées
 var arrayName = []
 var arrayEmail = []
