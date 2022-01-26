@@ -30,23 +30,110 @@ function loadUsers() {
   arrID = JSON.parse(window.localStorage.getItem('idData'));
 
   //Déclarer des variables pour les données
-  var i = document.getElementById("idData");
-  i.innerHTML = arrID;
+  var i = document.getElementById("idData1");
+  i.innerHTML = arrID[0];
 
-  var n = document.getElementById("nameData");
-  n.innerHTML = arrName;
+  var n = document.getElementById("nameData1");
+  n.innerHTML = arrName[0];
 
-  var e = document.getElementById("emailData");
+  var e = document.getElementById("emailData1");
   e.innerHTML = arrEmail[0];
 
-  var g = document.getElementById("gradeData");
-  g.innerHTML = arrGrade;
+  var g = document.getElementById("gradeData1");
+  g.innerHTML = arrGrade[0];
 
-  var t = document.getElementById("typeData");
-  t.innerHTML = arrType;
+  var t = document.getElementById("typeData1");
+  t.innerHTML = arrType[0];
 
-  var c = document.getElementById("commentsData");
-  c.innerHTML = arrComments;
+  var c = document.getElementById("commentsData1");
+  c.innerHTML = arrComments[0];
+
+
+
+
+  var ii = document.getElementById("idData2");
+  ii.innerHTML = arrID[1];
+
+  var nn = document.getElementById("nameData2");
+  nn.innerHTML = arrName[1];
+
+  var ee = document.getElementById("emailData2");
+  ee.innerHTML = arrEmail[1];
+
+  var gg = document.getElementById("gradeData2");
+  gg.innerHTML = arrGrade[1];
+
+  var tt = document.getElementById("typeData2");
+  tt.innerHTML = arrType[1];
+
+  var cc = document.getElementById("commentsData2");
+  cc.innerHTML = arrComments[1];
+
+
+
+
+
+  var iii = document.getElementById("idData3");
+  iii.innerHTML = arrID[2];
+
+  var nnn = document.getElementById("nameData3");
+  nnn.innerHTML = arrName[2];
+
+  var eee = document.getElementById("emailData3");
+  eee.innerHTML = arrEmail[2];
+
+  var ggg = document.getElementById("gradeData3");
+  ggg.innerHTML = arrGrade[2];
+
+  var ttt = document.getElementById("typeData3");
+  ttt.innerHTML = arrType[2];
+
+  var ccc = document.getElementById("commentsData3");
+  ccc.innerHTML = arrComments[2];
+
+
+
+
+
+  var iiii = document.getElementById("idData4");
+  iiii.innerHTML = arrID[3];
+
+  var nnnn = document.getElementById("nameData4");
+  nnnn.innerHTML = arrName[3];
+
+  var eeee = document.getElementById("emailData4");
+  eeee.innerHTML = arrEmail[3];
+
+  var gggg = document.getElementById("gradeData4");
+  gggg.innerHTML = arrGrade[3];
+
+  var tttt = document.getElementById("typeData4");
+  tttt.innerHTML = arrType[3];
+
+  var cccc = document.getElementById("commentsData4");
+  cccc.innerHTML = arrComments[3];
+
+
+
+
+
+  var iiiii = document.getElementById("idData5");
+  iiiii.innerHTML = arrID[4];
+
+  var nnnnn = document.getElementById("nameData5");
+  nnnnn.innerHTML = arrName[4];
+
+  var eeeee = document.getElementById("emailData5");
+  eeeee.innerHTML = arrEmail[4];
+
+  var ggggg = document.getElementById("gradeData5");
+  ggggg.innerHTML = arrGrade[4];
+
+  var ttttt = document.getElementById("typeData5");
+  ttttt.innerHTML = arrType[4];
+
+  var ccccc = document.getElementById("commentsData5");
+  ccccc.innerHTML = arrComments[4];
     
 }
 
